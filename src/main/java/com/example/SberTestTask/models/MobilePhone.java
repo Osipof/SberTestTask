@@ -3,11 +3,17 @@ package com.example.SberTestTask.models;
 import jakarta.persistence.*;
 import lombok.*;
 
+/**
+ * Модель MobilePhone
+ *
+ * @author Иван Осипов
+ */
 @Entity(name = "mobile_phones")
 @Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class MobilePhone {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
