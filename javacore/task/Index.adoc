@@ -1,0 +1,18 @@
+:author: Kotlyarenko D.K
+:toc: left
+:sectnums:
+:toc-title: Оглавление
+
+= Java Core : Выпускная работа =
+
+include::task_description.adoc[]
+
+include::about_car_entity.adoc[]
+
+include::about_person_entity.adoc[]
+
+include::about_agreement_entity.adoc[]
+
+include::requirements.adoc[]
+
+include::how2_submit_work.adoc[]

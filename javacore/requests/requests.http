@@ -1,0 +1,59 @@
+
+#### Получить список всех сущностей
+GET http://localhost:8080/api/v1/question/list
+content-type: application/xml
+
+#### Найти сущность по критериям
+GET http://localhost:8080/api/v1/question/find?multipleChoice=false&level=medium&id=2f60932c-71f0-4acb-ba64-fdc6529f1699
+content-type: application/xml
+
+#### Сохранить еще один объект
+PUT http://localhost:8080/api/v1/question/save
+content-type: application/xml
+
+<question>
+    <createdAt>2023-11-01T20:59:59</createdAt>
+    <level>MEDIUM</level>
+    <question>Единственный абстрактный метод интерфейса BiFunction?</question>
+    <answer>
+        <answer>R apply(T t, U u)</answer>
+        <correct>true</correct>
+    </answer>
+    <answer>
+        <answer>T apply (T t)</answer>
+        <correct>false</correct>
+    </answer>
+    <answer>
+        <answer>boolean test (T t)</answer>
+        <correct>false</correct>
+    </answer>
+    <answer>
+        <answer>T apply (T t1, T t2)</answer>
+        <correct>false</correct>
+    </answer>
+    <multipleChoice>false</multipleChoice>
+</question>
+
+#### Обновить объект
+PUT http://localhost:8080/api/v1/question/save
+content-type: application/xml
+
+<question>
+    <id>78287df9-4c8b-4716-b36b-0d041f53408a</id>
+    <createdAt>2023-11-06T19:09:27</createdAt>
+    <level>HARD</level>
+    <question>Интерфейс расширяет интерфейс?</question>
+    <answer>
+        <answer>Да</answer>
+        <correct>true</correct>
+    </answer>
+    <answer>
+        <answer>Нет</answer>
+        <correct>false</correct>
+    </answer>
+    <multipleChoice>false</multipleChoice>
+</question>
+
+#### Удалить объект
+DELETE http://localhost:8080/api/v1/question/delete?id=78287df9-4c8b-4716-b36b-0d041f53408a
+content-type: application/xml

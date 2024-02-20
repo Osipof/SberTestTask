@@ -1,0 +1,22 @@
+<auditEvent>
+    <actionDateTime>2021-11-05T20:30:00+03:00</actionDateTime>
+    <entity>QUESTION</entity>
+    <action>UPDATE</action>
+    <data>
+        <question>
+            <id>78287df9-4c8b-4716-b36b-0d041f53408a</id>
+            <createdAt>2023-11-06T19:09:27</createdAt>
+            <level>HARD</level>
+            <question>Интерфейс расширяет интерфейс?</question>
+            <answer>
+                <answer>Да</answer>
+                <correct>true</correct>
+            </answer>
+            <answer>
+                <answer>Нет</answer>
+                <correct>false</correct>
+            </answer>
+            <multipleChoice>false</multipleChoice>
+        </question>
+    </data>
+</auditEvent>
